@@ -1,0 +1,5 @@
+# DotEnv configuration
+.env
+
+reports/drafts
+reports/figures
