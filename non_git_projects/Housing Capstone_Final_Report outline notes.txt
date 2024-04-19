@@ -1,0 +1,68 @@
+Capstone_Presentation
+
+-Problem Statement
+-Who Might Want To Know (also, wider impact)
+-Explanation of data source (find from K)
+-Interesting features
+-Feature engineering? (best features)
+-Modeling (cover page, flow chart (processing, splits, etc), model metrics, best model details, )
+-Results - which is most influential?
+-Limitations and future work
+
+
+
+
+
+Capstone_Final_Report
+
+Report:
+
+1. Problem
+	Can we meaningfully predict the price of a house based on its features?
+
+2. Approach
+	Clean the data
+	Select our features
+	Apply a selection of machine learning models
+	
+3. Findings (2-4 figures; core of story)
+
+4. Up to 3 concrete use cases
+	-Assessing ROI of new builds
+	-Assessing ROI of renovations/addons
+	-Identifying undervalued homes for purchase
+
+5. Limitations
+	Specific region / might not generalize
+	Change over time
+	Little transparency about collection; can't confirm representativeness
+	" can't confirm accuracy
+
+
+
+Final script:
+
+
+Model Metrics (CSV or text; EASY TO READ):
+	final model features
+	--parameters
+	--hyperparameters
+	--performance metrics
+
+
+ONGOING STEPS:
+	--1. Determine real optimal params (running)
+	--1.5 Make parameter report template
+	--2. Re-run original notebook
+	--3. Acquire real optimal parameters
+	Paste params into txt doc
+
+
+Readme:
+	Refer to exmaple: https://github.com/Colley-K/rock_climbing_recommendation_system/blob/master/README.md
+
+	-Problem statement
+	-Approach statement
+	-Step by step (cleaning, eda...) w/"Problem: Solution: "
+
+-Upload all to one repository, submit repository link

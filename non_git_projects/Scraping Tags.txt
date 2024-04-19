@@ -1,0 +1,201 @@
+
+data-ds-bundleid="5926
+
+Tasks:
+	Compile a list of game IDs that will be our dataset (Go for 100)
+		-Certain number from each genre
+		-Most popular 1000 games on Steam?
+			IGNORE bundles, soundtracks, ebooks!!!
+		-Out for at least 3 months
+	Use that list of IDs to scrape
+		Then save the results in 
+
+
+
+APP EXAMPLE
+
+<a class="search_result_row ds_collapse_flag" data-ds-appid="521890" data-ds-crtrids="[6858705,35483784]" data-ds-itemkey="App_521890" data-ds-steam-deck-compat-handled="true" data-ds-tagids="[1667,3810,1687,3839,4106,1742,3978]" data-gpnav="item" data-search-page="1" href="https://store.steampowered.com/app/521890/Hello_Neighbor/?snr=1_7_7_151_150_1" onmouseout="HideGameHover( this, event, 'global_hover' )" onmouseover="GameHover( this, event, 'global_hover', {&quot;type&quot;:&quot;app&quot;,&quot;id&quot;:521890,&quot;public&quot;:1,&quot;v6&quot;:1} );">
+ <div class="col search_capsule">
+  <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/521890/capsule_sm_120.jpg?t=1670593236" srcset="https://cdn.cloudflare.steamstatic.com/steam/apps/521890/capsule_sm_120.jpg?t=1670593236 1x, https://cdn.cloudflare.steamstatic.com/steam/apps/521890/capsule_231x87.jpg?t=1670593236 2x"/>
+ </div>
+ <div class="responsive_search_name_combined">
+  <div class="col search_name ellipsis">
+   <span class="title">
+    Hello Neighbor
+   </span>
+   <div>
+    <span class="platform_img win">
+    </span>
+   </div>
+  </div>
+  <div class="col search_released responsive_secondrow">
+   Dec 8, 2017
+  </div>
+  <div class="col search_reviewscore responsive_secondrow">
+   <span class="search_review_summary positive" data-tooltip-html="Very Positive&lt;br&gt;84% of the 9,641 user reviews for this game are positive.">
+   </span>
+  </div>
+  <div class="col search_price_discount_combined responsive_secondrow" data-price-final="2999">
+   <div class="col search_discount_and_price responsive_secondrow">
+    <div class="discount_block search_discount_block no_discount" data-bundlediscount="0" data-discount="0" data-price-final="2999">
+     <div class="discount_prices">
+      <div class="discount_final_price">
+       $29.99
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <div style="clear: left;">
+ </div>
+</a>
+
+
+
+[{'developer': 'Dynamic Pixels', 'publisher': 'tinyBuild', 'genre': ['Adventure', 'Indie', 'Strategy']}, {'developer': 'Rolling Glory Jam', 'publisher': 'Freedom Games', 'genre': ['Adventure', 'Casual', 'Indie']}]
+
+
+
+
+
+
+https://store.steampowered.com/app/521890/Hello_Neighbor/?snr=1_7_7_151_150_1
+https://store.steampowered.com/app/1789090/Hello_Goodboy/?snr=1_7_7_151_150_1
+---------------------------------------------------------------------------
+KeyboardInterrupt                         Traceback (most recent call last)
+Cell In[99], line 16
+     14     # Include a random delay to prevent getting IP blocked.
+     15     interval = 2 + random.random() * 4
+---> 16     time.sleep(interval)
+     19 # Turn the new list of dicts into a new df.
+     20 games_extended_df = pd.DataFrame(games_extend_list)
+
+KeyboardInterrupt: 
+<a class="search_result_row ds_collapse_flag" data-ds-appid="521890" data-ds-crtrids="[6858705,35483784]" data-ds-itemkey="App_521890" data-ds-steam-deck-compat-handled="true" data-ds-tagids="[1667,3810,1687,3839,4106,1742,3978]" data-gpnav="item" data-search-page="1" href="https://store.steampowered.com/app/521890/Hello_Neighbor/?snr=1_7_7_151_150_1" onmouseout="HideGameHover( this, event, 'global_hover' )" onmouseover="GameHover( this, event, 'global_hover', {&quot;type&quot;:&quot;app&quot;,&quot;id&quot;:521890,&quot;public&quot;:1,&quot;v6&quot;:1} );">
+ <div class="col search_capsule">
+  <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/521890/capsule_sm_120.jpg?t=1670593236" srcset="https://cdn.cloudflare.steamstatic.com/steam/apps/521890/capsule_sm_120.jpg?t=1670593236 1x, https://cdn.cloudflare.steamstatic.com/steam/apps/521890/capsule_231x87.jpg?t=1670593236 2x"/>
+ </div>
+ <div class="responsive_search_name_combined">
+  <div class="col search_name ellipsis">
+   <span class="title">
+    Hello Neighbor
+   </span>
+   <div>
+    <span class="platform_img win">
+    </span>
+   </div>
+  </div>
+  <div class="col search_released responsive_secondrow">
+   Dec 8, 2017
+  </div>
+  <div class="col search_reviewscore responsive_secondrow">
+   <span class="search_review_summary positive" data-tooltip-html="Very Positive&lt;br&gt;84% of the 9,641 user reviews for this game are positive.">
+   </span>
+  </div>
+  <div class="col search_price_discount_combined responsive_secondrow" data-price-final="2999">
+   <div class="col search_discount_and_price responsive_secondrow">
+    <div class="discount_block search_discount_block no_discount" data-bundlediscount="0" data-discount="0" data-price-final="2999">
+     <div class="discount_prices">
+      <div class="discount_final_price">
+       $29.99
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <div style="clear: left;">
+ </div>
+</a>
+
+
+
+
+
+
+
+BUNDLE EXAMPLE
+
+<a class="search_result_row ds_collapse_flag" data-ds-bundle-data='{"m_nDiscountPct":"10","m_bMustPurchaseAsSet":1,"m_rgItems":[{"m_nPackageID":123841,"m_rgIncludedAppIDs":[521890],"m_bPackageDiscounted":false,"m_nBasePriceInCents":2999,"m_nFinalPriceInCents":2999,"m_nFinalPriceWithBundleDiscount":2699},{"m_nPackageID":227195,"m_rgIncludedAppIDs":[767890],"m_bPackageDiscounted":false,"m_nBasePriceInCents":699,"m_nFinalPriceInCents":699,"m_nFinalPriceWithBundleDiscount":629}],"m_bIsCommercial":false,"m_bRestrictGifting":false}' data-ds-bundleid="5926" data-ds-crtrids="[6858705,35483784]" data-ds-itemkey="Bundle_5926" data-ds-steam-deck-compat-handled="true" data-ds-tagids="[1667,21,3810,9,1687,492,3839]" data-gpnav="item" data-search-page="1" href="https://store.steampowered.com/bundle/5926/Hello_Neighbor_Collectors_Edition/?snr=1_7_7_151_150_1" onmouseout="HideGameHover( this, event, 'global_hover' )" onmouseover="GameHover( this, event, 'global_hover', {&quot;type&quot;:&quot;bundle&quot;,&quot;id&quot;:5926,&quot;public&quot;:1,&quot;v6&quot;:1} );">
+ <div class="col search_capsule">
+  <img src="https://cdn.cloudflare.steamstatic.com/steam/bundles/5926/sl255oq764nnwigh/capsule_sm_120.jpg?t=1515515032" srcset="https://cdn.cloudflare.steamstatic.com/steam/bundles/5926/sl255oq764nnwigh/capsule_sm_120.jpg?t=1515515032 1x, https://cdn.cloudflare.steamstatic.com/steam/bundles/5926/sl255oq764nnwigh/capsule_231x87.jpg?t=1515515032 2x"/>
+ </div>
+ <div class="responsive_search_name_combined">
+  <div class="col search_name ellipsis">
+   <span class="title">
+    Hello Neighbor Collector's Edition
+   </span>
+   <div>
+    <span class="platform_img win">
+    </span>
+    <span class="platform_img music">
+    </span>
+   </div>
+  </div>
+  <div class="col search_released responsive_secondrow">
+  </div>
+  <div class="col search_reviewscore responsive_secondrow">
+   <span class="search_review_summary positive" data-tooltip-html="Very Positive&lt;br&gt;84% of the 9,682 user reviews for games in this bundle are positive.">
+   </span>
+  </div>
+  <div class="col search_price_discount_combined responsive_secondrow" data-price-final="3328">
+   <div class="col search_discount_and_price responsive_secondrow">
+    <div class="discount_block search_discount_block no_discount" data-bundlediscount="10" data-discount="10" data-price-final="3328">
+     <div class="bundle_base_discount">
+      -10%
+     </div>
+     <div class="discount_pct">
+      -10%
+     </div>
+     <div class="discount_prices">
+      <div class="discount_original_price">
+       $36.98
+      </div>
+      <div class="discount_final_price">
+       $33.28
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <div style="clear: left;">
+ </div>
+</a>
+
+
+
+REVIEW FROM SCROLLABLE REVIEWS PAGE CONTENT TAGS
+
+			<div class="vote_header">
+								<div class="reviewInfo">
+					<div class="thumb">
+						<img src="https://community.akamai.steamstatic.com/public/shared/images/userreviews/icon_thumbsUp.png?v=1" width="44" height="44">
+					</div>
+					<div class="title">Recommended</div>
+										<div class="hours">53.5 hrs on record</div>
+									</div>
+				<div style="clear: left"></div>
+			</div>
+
+			<div class="apphub_CardTextContent">
+				<div class="date_posted">Posted: December 9, 2017</div>
+																本人已通过ACT 1 来到ACT2，卡关了，我摸索了一个中午，才通过ACT1.这游戏就是慢慢摸索，你什么都知道了就不好玩了，实在找不着就等舍长的视频吧，他会更新攻略的			</div>
+		</div>
+		<div class="UserReviewCardContent_Footer">
+			<div class="gradient">&nbsp;</div>
+
+
+
+
+
+var CsearchPreferences = {"timestamp_updated":1693247622,"hide_owned":0,"hide_ignored":1,"hide_wishlist":0,"infiniscroll":0};
+
+INFINISCROLL MUST BE SET TO 0
+
+
+12458
+
+?l=en
+?category1=998 ('games')
