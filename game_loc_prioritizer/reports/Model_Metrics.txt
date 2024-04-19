@@ -1,0 +1,27 @@
+Model: custom hybrid recommendation engine (collaborative + content-based with extra features)
+
+'similar_user_limit': 250
+'collab_filter_limit': 103
+'content_filter_limit': 32
+'double_bonus': 1.79
+'popular_bias': 1.84
+'ratio': 0.71
+'recs': 20
+
+NOTE:
+- The "limit" parameters define the maximum number of returned values that part of the engine can include in its calculations.
+- 'double_bonus' is used to boost the score of games that appear in both filters via: new_score = old_score + (old_score * double_bonus)
+- 'popular_bias' is used to boost the score of games by their overall positive_review_percent on the Steam store via: new_score = old_score + (positive_review_percent * popular_bias)
+- 'ratio' weights the collab & content filters via: final_score = (collab_score * ratio) + (content_score * (1-ratio)). This happens before double_bonus and popular_bias are applied.
+- 'recs' is the number of games returned as recommendations.
+
+
+Best model performance (via Bayesian optimization of the above parameters):
+
+Test users: 100
+Good recs: 30
+Bad recs: 17
+Total score: 13
+
+
+
