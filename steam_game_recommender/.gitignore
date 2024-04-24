@@ -1,0 +1,9 @@
+# DotEnv configuration
+.env
+
+# Personal notes & scratchpads
+notes/
+**/etc/
+
+# The data has become untenable
+data/
