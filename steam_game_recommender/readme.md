@@ -1,6 +1,6 @@
 This repo began as a final capstone project for the Springboard Data Science Career Track curriculum.  
 
-See the "project_overview" file for an introductio to the project.  
+See the "project_overview" file for an introduction to the project.  
 
 The project evolved to have two main foci:  
 1. Scraping the Steam store to create a relational database-like dataset for various kinds of analysis and modeling
