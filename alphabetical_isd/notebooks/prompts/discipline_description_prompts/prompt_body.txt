@@ -1,0 +1,3 @@
+MODIFIER
+
+You're filling in the "description" blank on a disciplinary report. A student is being disciplined for INCIDENT. You are ordering ACTION. Give some details about the INCIDENT, but do not identify any person, time, or specific length of punishment. You can include time of day, demeanor of student, severity, odd details, etc. The incident happened on DATE but do not mention that. Do not give the student a name or number; refer to them only as "student."

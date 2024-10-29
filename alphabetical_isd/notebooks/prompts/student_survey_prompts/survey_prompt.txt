@@ -1,0 +1,13 @@
+Give your answers to the following survey questions in JSON format, like:
+{
+ '1':[answer to 1],
+ '2':{answer to 2],
+ '3':{answer to 3],
+ '4':{answer to 4]
+}
+You must only use 1, 2, 3, 4 as keys. Here are the questions:
+
+1: What are you most looking forward to this semester?
+2: What is one hope or goal you have for this semester?
+3: What do you think will be challenging for you this semester?
+4: What can the school do to help you achieve your hopes and goals?

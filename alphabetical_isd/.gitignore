@@ -1,0 +1,6 @@
+# DotEnv configuration
+.env
+
+# Personal notes & scratchpads
+notes/
+**/etc/
